@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    {% if success is not defined %}
+        {%  if error is defined %}
+            <h1 style="color:red">{{ error }}</h1>
+        {% endif %}
+        {{ form(datosBancariosForm, {"action": path('datos')}) }}
+
+    {% else %}
+        <h1 style="color:green">{{ success }}</h1>
+        <a class="btn btn-primary" href="{{ path("login") }}">Volver</a>
+    {% endif %}
+{% endblock %}
