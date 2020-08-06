@@ -1,9 +1,3 @@
 index:
     path: /
-    controller: App\Controller\DefaultController::index
-    methods: GET
-
-hello:
-    path: /hello/{name}
-    controller: App\Controller\DefaultController::hello
-    methods: GET
+    controller: App\Controller\LoginController::login

@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Controller;
-
 
 use App\Entity\Cliente;
 use App\Form\LoginType;
@@ -12,6 +10,10 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
+/**
+ * Class LoginController
+ * @package App\Controller
+ */
 class LoginController extends AbstractController
 {
 

@@ -35,7 +35,6 @@ class DatosBancariosController extends AbstractController
         if($client == null){
             return $this->redirectToRoute("login");
         }
-        dump($client);
         $DatosBancarios = new DatosBancarios();
 
         if($client->getDatosBancarios() !== null){
@@ -61,12 +60,9 @@ class DatosBancariosController extends AbstractController
                 "error" => "El formulario no es valido"
             ]);
         }
-    dump($DatosBancarios);
         try{
-            $this->entityManager->persist($DatosBancarios);
-            //$this->entityManager->persist($client);
+            $this->entityManager->merge($DatosBancarios);
             $this->entityManager->flush();
-            //$this->entityManager->flush($client);
         } catch (\Exception $exception){
             dump($exception);
             return $this->render("datosBancarios.html.twig",[

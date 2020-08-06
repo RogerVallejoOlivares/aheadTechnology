@@ -104,7 +104,6 @@ class Cliente
     {
         $this->datosBancarios = $datosBancarios;
 
-        // set the owning side of the relation if necessary
         if ($datosBancarios->getCliente() !== $this) {
             $datosBancarios->setCliente($this);
         }
