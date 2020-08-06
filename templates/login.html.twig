@@ -1,6 +1,7 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
+    {# Comprobación de la variable error, si llega se mostrara el mensaje de error que recibamos y otra vez el formulario #}
     {%  if error is defined %}
         <h1 style="color:red">{{ error }}</h1>
     {% endif %}

@@ -1,3 +1,4 @@
+# Todas las rutas han sido creadas vía Route Annotations, las encontrareis en los controllers
 index:
     path: /
     controller: App\Controller\LoginController::login

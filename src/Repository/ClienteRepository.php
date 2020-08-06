@@ -19,6 +19,15 @@ class ClienteRepository extends ServiceEntityRepository
         parent::__construct($registry, Cliente::class);
     }
 
+    /**
+     * Select del cliente con el nombre y el email
+     * Pasamos a Lower tanto la variable como los datos de la BBDD, NO RECOMENDADO, hecho para facilitar las pruebas manuales
+     * Recibiremos un Cliente o null
+     * @param $nombre
+     * @param $email
+     * @return Cliente|null
+     * @throws \Doctrine\ORM\NonUniqueResultException
+     */
     public function findByNameEmail($nombre, $email): ?Cliente
     {
         return $this->createQueryBuilder('c')
@@ -30,5 +39,11 @@ class ClienteRepository extends ServiceEntityRepository
             ->getOneOrNullResult()
         ;
     }
+
+    /**
+     * Insert básico
+     * INSERT INTO cliente (nombre, apellidos, email, telefono) VALUES
+     * ('roger','Vallejo', 'roger@mail.com', '1234567890');
+     */
 
 }

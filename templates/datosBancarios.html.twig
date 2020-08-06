@@ -1,10 +1,14 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
+    {# comprobación de la variable success, si llega significa que el usuario ya tiene los datos bancarios guardados y
+    vera un mensaje de all ok y un boton para regresar al login #}
     {% if success is not defined %}
+        {# Comprobación de la variable error, si llega se mostrara el mensaje de error que recibe y el formulario #}
         {%  if error is defined %}
             <h1 style="color:red">{{ error }}</h1>
         {% endif %}
+        {# se modifica el path del form para que apunte a la Route con nombre datos #}
         {{ form(datosBancariosForm, {"action": path('datos')}) }}
 
     {% else %}
