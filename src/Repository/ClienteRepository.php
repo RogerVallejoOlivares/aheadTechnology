@@ -40,10 +40,4 @@ class ClienteRepository extends ServiceEntityRepository
         ;
     }
 
-    /**
-     * Insert básico
-     * INSERT INTO cliente (nombre, apellidos, email, telefono) VALUES
-     * ('roger','Vallejo', 'roger@mail.com', '1234567890');
-     */
-
 }
