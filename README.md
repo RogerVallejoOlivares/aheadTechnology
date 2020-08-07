@@ -31,3 +31,9 @@ ahead
 <code>DATABASE_URL=mysql://usuario:contraseña@127.0.0.1:3306/nombreBasedeDatos</code><br></p>
 <p>Finalmente usaremos el web server que nos ofrece symfony para correr el proyecto localmente
 <code>symfony server:start</code><br></p>
+
+---
+
+### Recordad lanzar las dos migraciones
+<p> el proyecto tiene dos migraciones, una con la creación de las tablas y la segunda con la inserción de 35 registros a la base de datos</p>
+
