@@ -17,11 +17,11 @@ ahead
 
 
 ## Probar proyecto
-<p>Nos colocaremos en el directorio donde este localizado el proyecto</p>
-<code>cd aheadTechnology</code><br>
-<p>Ahora lanzaremos la query para que composer se encarge de dejar listo el proyecto con todas sus dependencias</p>
-<code>composer install</code><br>
-<p>Editaremos el fichero .env para configurar nuestra BBDD tiene que parecerse a algo así:</p>
-<code>DATABASE_URL=mysql://usuario:contraseña@127.0.0.1:3306/nombreBasedeDatos</code><br>
-<p>Finalmente usaremos el web server que nos ofrece symfony para correr el proyecto localmente</p>
-<code>symfony server:start</code><br>
+<p>Nos colocaremos en el directorio donde este localizado el proyecto
+<code>cd aheadTechnology</code><br></p>
+<p>Ahora lanzaremos la query para que composer se encarge de dejar listo el proyecto con todas sus dependencias
+<code>composer install</code><br></p>
+<p>Editaremos el fichero .env para configurar nuestra BBDD tiene que parecerse a algo así:
+<code>DATABASE_URL=mysql://usuario:contraseña@127.0.0.1:3306/nombreBasedeDatos</code><br></p>
+<p>Finalmente usaremos el web server que nos ofrece symfony para correr el proyecto localmente
+<code>symfony server:start</code><br></p>
