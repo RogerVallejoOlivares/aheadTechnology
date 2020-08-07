@@ -42,4 +42,6 @@ Lenguaje de programación: PHP 7.3
 
 ### Recordad lanzar las dos migraciones
 <p> el proyecto tiene dos migraciones, una con la creación de las tablas y la segunda con la inserción de 35 registros a la base de datos</p>
+<code>php bin/console doctrine:migrations:execute --up 'DoctrineMigrations\[Nombre de la version]'
+</code>
 
