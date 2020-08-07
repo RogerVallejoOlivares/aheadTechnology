@@ -1,9 +1,9 @@
 # aheadTechnology
 Prueba técnica
-Aplicación web que solicita los datos bancarios a los clientes y los almacena de forma que posteriormente se pueda enviar una factura a dichos clientes.
-Framework utilizado: Symfony 5.1
-BBDD: Mysql 8
-Lenguaje de programación: PHP 7.3
+Aplicación web que solicita los datos bancarios a los clientes y los almacena de forma que posteriormente se pueda enviar una factura a dichos clientes.<br>
+Framework utilizado: Symfony 5.1<br>
+BBDD: Mysql 8<br>
+Lenguaje de programación: PHP 7.3<br>
 
 
 ---
