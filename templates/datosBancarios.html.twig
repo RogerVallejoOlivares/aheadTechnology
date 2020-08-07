@@ -6,13 +6,13 @@
     {% if success is not defined %}
         {# Comprobación de la variable error, si llega se mostrara el mensaje de error que recibe y el formulario #}
         {%  if error is defined %}
-            <h1 style="color:red">{{ error }}</h1>
+            <h1 class="error" style="color:red">{{ error }}</h1>
         {% endif %}
         {# se modifica el path del form para que apunte a la Route con nombre datos #}
         {{ form(datosBancariosForm, {"action": path('datos')}) }}
 
     {% else %}
-        <h1 style="color:green">{{ success }}</h1>
+        <h1 class="success" style="color:green">{{ success }}</h1>
         <a class="btn btn-primary" href="{{ path("login") }}">Volver</a>
     {% endif %}
 {% endblock %}
